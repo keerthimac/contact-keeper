@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, createRef } from 'react';
 import PropTypes from 'prop-types';
 import ContactContext from '../../context/contact/contactContext';
 
@@ -18,8 +18,10 @@ const ContactItem = ({ contact }) => {
     setCurrent(contact);
   };
 
+  const warper = createRef();
+
   return (
-    <div className="card bg-light">
+    <div ref={warper} className="card bg-light">
       <h3 className="text-primary text-left">
         {name}{' '}
         <span style={{ float: 'right' }} className={'badge ' + (type === 'professional' ? 'badge-success' : 'badge-primary')}>
