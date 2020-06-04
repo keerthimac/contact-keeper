@@ -18,7 +18,12 @@ const AuthState = (props) => {
   //ACTIONS
 
   //load User
-  const loadUser = () => console.log('load user');
+  const loadUser = () => {
+    if (localStorage.token) {
+      setAuthToken;
+    }
+    console.log('load user');
+  };
 
   //Register User
   const register = async (formData) => {
