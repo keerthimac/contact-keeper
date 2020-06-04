@@ -27,7 +27,7 @@ const ContactForm = () => {
   });
 
   const { name, email, phone, type } = contact;
-  console.log(contact);
+  // console.log(contact);
   const onChange = (e) => setContact({ ...contact, [e.target.name]: e.target.value });
 
   const onSubmit = (e) => {
