@@ -386,20 +386,20 @@ table th {
 
 /* Animation (Add After) */
 .item-enter {
-  /* max-height: 0; */
+  max-height: 0;
   opacity: 0;
 }
 .item-enter-active {
-  /* max-height: 200px; */
+  max-height: 200px;
   opacity: 1;
   transition: all 1000ms;
 }
 .item-exit {
-  /* max-height: 200px; */
+  max-height: 200px;
   opacity: 1;
 }
 .item-exit-active {
-  /* max-height: 0; */
+  max-height: 0;
   opacity: 0;
   transition: all 1000ms;
 }
